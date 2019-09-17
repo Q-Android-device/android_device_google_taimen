@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_taimen.mk \
+    $(LOCAL_DIR)/rr_taimen.mk \
 
 COMMON_LUNCH_CHOICES := \
     rr_taimen-userdebug
