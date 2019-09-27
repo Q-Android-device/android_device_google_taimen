@@ -27,6 +27,8 @@ BOARD_EXT4_SHARE_DUP_BLOCKS := true
 # sepolicy
 BOARD_SEPOLICY_DIRS += device/google/taimen/sepolicy
 
+-include vendor/google_devices/taimen/proprietary/BoardConfigVendor.mk
+
 # Testing related defines
 BOARD_PERFSETUP_SCRIPT := platform_testing/scripts/perf-setup/wahoo-setup.sh
 
@@ -40,6 +42,14 @@ TARGET_RECOVERY_UI_LIB := \
     librecovery_ui_taimen \
     libbootloader_message \
     libfstab
+
+# Custom board config for taimen
+# GPS
+BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
+BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
+
+# Time services
+BOARD_USES_QC_TIME_SERVICES := true
 
 # VTS DTBO Verification. This kernel cmdline parameter should be added by the bootloader
 # for all future devices.
