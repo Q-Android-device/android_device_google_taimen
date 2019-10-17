@@ -14,7 +14,7 @@ DEVICE_PACKAGE_OVERLAYS += device/google/taimen/overlay-carbon
 
 # Pixel Experience
 PRODUCT_COPY_FILES += \
-  device/google/taimen/nexus.xml:system/etc/sysconfig/nexus.xml
+  device/google/taimen/nexus.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/nexus.xml
 
 # ModemService
 PRODUCT_COPY_FILES += \
@@ -34,4 +34,4 @@ PRODUCT_HOST_PACKAGES += brillo_update_payload
 
 # Privileged app permissions
 PRODUCT_COPY_FILES += \
-    device/google/taimen/privapp-permissions-taimen.xml:system/etc/permissions/privapp-permissions-taimen.xml
+    device/google/taimen/privapp-permissions-taimen.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-taimen.xml
