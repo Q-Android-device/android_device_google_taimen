@@ -55,4 +55,4 @@ BOARD_USES_QC_TIME_SERVICES := true
 # for all future devices.
 BOARD_KERNEL_CMDLINE += androidboot.dtbo_idx=12
 
--include device/google/taimen/BoardConfigLineage.mk
+-include device/google/taimen/BoardConfigCarbon.mk
