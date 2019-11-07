@@ -21,3 +21,4 @@ PRODUCT_MAKEFILES := \
 COMMON_LUNCH_CHOICES := \
     aosp_taimen-userdebug \
     lineage_taimen-userdebug
+
